@@ -15,12 +15,12 @@ defaults:
     values:
       layout: default
       title: "Epiroc Safety"
-      icon: backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
+      icon: /epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
   - scope:
       path: "home.html"
     values:
       title: "Home"
-      loadmd: backend/jekyll/_includes/markdowns/home.md
+      loadmd: /epiroc-safety/backend/jekyll/_includes/markdowns/home.md
   - scope:
       path: "index.html"
     values:
@@ -29,5 +29,5 @@ defaults:
       path: "verify-work.html"
     values:
       title: "Verify Work"
-      icon: backend/assets/icons/verified.ico
+      icon: /epiroc-safety/backend/assets/icons/verified.ico
       
