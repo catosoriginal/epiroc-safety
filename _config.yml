@@ -4,8 +4,8 @@ baseurl: "/epiroc-safety"
 author: catosoriginal
 email: catos@catosmail.slmail.me
 
-layouts_dir: backend/jekyll
-includes_dir: backend/jekyll
+layouts_dir: backend/jekyll/_layouts
+includes_dir: backend/jekyll/_includes
 
 defaulticon: epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
 
