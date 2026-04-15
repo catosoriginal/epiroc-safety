@@ -47,7 +47,7 @@ defaults:
       path: "ukraine.html"
     values:
       title: "Epiroc at Ukraine"
-      loadmd: markdowns/digital.md
+      loadmd: markdowns/ukraine.md
   - scope:
       path: "index.html"
     values:

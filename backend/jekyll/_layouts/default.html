@@ -22,7 +22,7 @@
             {% if page.loadmd %}
                 <div id="content-md">
                     {% capture md %}
-                        {% include {{ page.loadmd }} %}
+                        {% include page.loadmd %}
                     {% endcapture %}
                 
                     {{ md | markdownify }}
