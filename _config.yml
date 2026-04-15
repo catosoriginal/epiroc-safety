@@ -1,6 +1,7 @@
 title: Epiroc Safety
 description: Website about EPIROC INC. safety
-baseurl: "/epiroc-safety/"
+url: https://catosoriginal.github.io
+baseurl: /epiroc-safety/
 author: catosoriginal
 email: catos@catosmail.slmail.me
 
@@ -9,7 +10,6 @@ includes_dir: backend/jekyll/_includes
 
 exclude:
  - github
-
 defaults:
   - scope:
       path: "" 
