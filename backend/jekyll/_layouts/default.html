@@ -7,9 +7,9 @@
         <link rel="icon" href="{{ page.icon | default:'/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png' }}" type="image/x-icon">
         <noscript>You need to enable javascript to use this website!</noscript>
         <p>Default layout :)</p>
-        {{% include header.html %}}
     </head>
     <body>
+        {{% include header.html %}}
         {% if content != "" %}
             {{ content }}
         {% else %}
