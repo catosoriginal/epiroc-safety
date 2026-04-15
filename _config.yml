@@ -1,0 +1,25 @@
+title: Epiroc Safety
+description: Website about EPIROC INC. safety
+baseurl: "/epiroc-safety"
+author: catosoriginal
+email: catos@catosmail.slmail.me
+
+layouts_dir: backend/jekyll
+includes_dir: backend/jekyll
+
+defaulticon: epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
+
+exclude:
+ - github
+
+defaults:
+  - scope:
+      path: "epiroc-safety/home"
+    values:
+      layout: default
+      title: "Home"
+  - scope:
+      path: "epiroc-safety/index"
+    values:
+      layout: default
+      title: "Wait"

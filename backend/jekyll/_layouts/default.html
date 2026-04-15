@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+        <link rel="icon" href="{{ page.icon | default:'/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png' }}" type="image/x-icon">
+        <noscript>You need to enable javascript to use this website!</noscript>
+        <p>Default layout :)</p>
+        {{% include header.html %}}
+    </head>
+    <body>
+        {% if content != "" %}
+            {{ content }}
+        {% else %}
+            <p>Page content not found.</p>
+        {% endif %}
+    </body>
+</html>
