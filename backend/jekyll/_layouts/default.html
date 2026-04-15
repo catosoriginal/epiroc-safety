@@ -21,8 +21,8 @@
             {% endif %}
             {% if page.loadmd %}
                 <div id="content-md">
-                    {% capture md %} | append: page.loadmd
-                        {% include 'markdowns/' | append: page.loadmd %}
+                    {% capture md %}
+                        {% include page.loadmd %}
                     {% endcapture %}
                 
                     {{ md | markdownify }}

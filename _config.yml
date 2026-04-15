@@ -22,37 +22,37 @@ defaults:
       path: "home.html"
     values:
       title: "Home"
-      loadmd: home.md
+      loadmd: markdowns/home.md
       permalink: home
   - scope:
       path: "about.html"
     values:
       title: "About Company"
-      loadmd: about.md
+      loadmd: markdowns/about.md
       permalink: about
   - scope:
       path: "safety.html"
     values:
       title: "Safety"
-      loadmd: safety.md
+      loadmd: markdowns/safety.md
       permalink: safety
   - scope:
       path: "digital.html"
     values:
       title: "Digital"
-      loadmd: digital.md
+      loadmd: markdowns/digital.md
       permalink: digital
   - scope:
       path: "technology.html"
     values:
       title: "Technology"
-      loadmd: technology.md
+      loadmd: markdowns/technology.md
       permalink: technology
   - scope:
       path: "ukraine.html"
     values:
       title: "Epiroc at Ukraine"
-      loadmd: ukraine.md
+      loadmd: markdowns/ukraine.md
       permalink: ukraine
   - scope:
       path: "index.html"
