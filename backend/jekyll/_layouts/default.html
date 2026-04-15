@@ -15,5 +15,14 @@
         {% if content %}
           {{ content }}
         {% endif %}
+       {% if page.loadmd %}
+        {% assign file = page.loadmd %}
+
+        {% capture md %}
+            {% include_relative file %}
+        {% endcapture %}
+
+        {{ md | markdownify }}
+       {% endif %}
     </body>
 </html>
