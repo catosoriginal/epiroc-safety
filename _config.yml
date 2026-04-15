@@ -18,10 +18,10 @@ defaults:
       title: "Epiroc Safety"
       icon: "backend/assets/icons/epiroc-logo-yellow-icon-nobg.png"
   - scope:
-      path: "epiroc-safety/home.html"
+      path: "home.html"
     values:
       title: "Home"
   - scope:
-      path: "epiroc-safety/index.html"
+      path: "index.html"
     values:
       title: "Wait"
