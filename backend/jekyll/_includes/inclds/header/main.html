@@ -1,6 +1,6 @@
 <footer id="mainfooter">
     <div id="mainfooter-somestuff">
-        <img class="homefooter-image" decoding="async" src="{% include assets/icons/epiroc-logo-yellow-icon-nobg.png %}" alt="Best Company Logo" />
+        <img class="homefooter-image" decoding="async" src="{{ 'backend/jekyll/_includes/assets/icons/epiroc-logo-yellow-icon-nobg.png' | relative_url }}" alt="Best Company Logo" />
         <p class="home">Fast, effective, safe.</p>
     </div>
     <nav id="mainfooter-redirects">
@@ -15,4 +15,4 @@
         
     </nav>
 </footer>
-<link rel="stylesheet" href="{% include inclds/header/main.css %}">
+<link rel="stylesheet" href="{{ 'inclds/header/main.css' | relative_url }}">
