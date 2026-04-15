@@ -16,7 +16,7 @@ defaults:
     values:
       layout: default
       title: "Epiroc Safety"
-      icon: "epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png"
+      icon: "backend/assets/icons/epiroc-logo-yellow-icon-nobg.png"
   - scope:
       path: "epiroc-safety/home"
     values:
