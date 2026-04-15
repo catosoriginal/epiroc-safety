@@ -5,8 +5,10 @@ baseurl: /epiroc-safety/
 author: catosoriginal
 email: catos@catosmail.slmail.me
 
-layouts_dir: /backend/jekyll/_layouts
-includes_dir: /backend/jekyll/_includes
+source: /epiroc-safety/
+
+layouts_dir: backend/jekyll/_layouts
+includes_dir: backend/jekyll/_includes
 
 
 defaults:
@@ -15,12 +17,12 @@ defaults:
     values:
       layout: default
       title: "Epiroc Safety"
-      icon: /epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
+      icon: backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
   - scope:
       path: "home.html"
     values:
       title: "Home"
-      loadmd: /epiroc-safety/backend/jekyll/_includes/markdowns/home.md
+      loadmd: backend/jekyll/_includes/markdowns/home.md
   - scope:
       path: "index.html"
     values:
@@ -29,5 +31,5 @@ defaults:
       path: "verify-work.html"
     values:
       title: "Verify Work"
-      icon: /epiroc-safety/backend/assets/icons/verified.ico
+      icon: backend/assets/icons/verified.ico
       
