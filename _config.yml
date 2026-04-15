@@ -5,8 +5,8 @@ baseurl: /epiroc-safety/
 author: catosoriginal
 email: catos@catosmail.slmail.me
 
-layouts_dir: "{{ 'backend/jekyll/_layouts' | relative_url }}"
-includes_dir: "{{ 'backend/jekyll/_includes' | relative_url }}"
+layouts_dir: backend/jekyll/_layouts
+includes_dir: backend/jekyll/_includes
 
 exclude:
  - github
@@ -16,7 +16,7 @@ defaults:
     values:
       layout: default
       title: "Epiroc Safety"
-      icon: "{{ '/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png' | relative_url }}"
+      icon: /epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
   - scope:
       path: "home.html"
     values:
@@ -29,5 +29,5 @@ defaults:
       path: "verify-work.html"
     values:
       title: "Verify Work"
-      icon: "{{ 'backend/assets/icons/verified.ico' | relative_url }}"
+      icon: /epiroc-safety/backend/assets/icons/verified.ico
       
