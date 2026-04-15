@@ -7,19 +7,21 @@ email: catos@catosmail.slmail.me
 layouts_dir: backend/jekyll/_layouts
 includes_dir: backend/jekyll/_includes
 
-defaulticon: epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
-
 exclude:
  - github
 
 defaults:
   - scope:
-      path: "epiroc-safety/home"
+      path: "" 
     values:
       layout: default
+      title: "Epiroc Safety"
+      icon: "epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png"
+  - scope:
+      path: "epiroc-safety/home"
+    values:
       title: "Home"
   - scope:
       path: "epiroc-safety/index"
     values:
-      layout: default
       title: "Wait"
