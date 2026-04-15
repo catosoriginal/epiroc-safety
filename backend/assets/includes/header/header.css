@@ -1,46 +1,9 @@
-/* AI used for CSS, im sorry but i dont know how to code CSS :( */
-/* MAIN FOOTER */
-#mainfooter {
-    background: #111316;
-    color: #e6e6e6;
-    padding: 24px 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 2px solid #f5c400;
-    flex-wrap: wrap;
-    gap: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+#mainfooter .dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-/* LEFT SIDE */
-#mainfooter-somestuff {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.homefooter-image {
-    width: 42px;
-    height: 42px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 6px rgba(245, 196, 0, 0.35));
-}
-
-#mainfooter-somestuff .home {
-    font-size: 14px;
-    font-weight: 500;
-    color: #cfcfcf;
-}
-
-/* NAV LINKS */
-#mainfooter-redirects {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-}
-
-#mainfooter-redirects a {
+#mainfooter .dropbtn {
     color: #f5c400;
     text-decoration: none;
     font-weight: 600;
@@ -49,16 +12,16 @@
     border-radius: 6px;
     transition: all 0.25s ease;
     position: relative;
+    cursor: pointer;
+    display: inline-block;
 }
 
-/* hover effect */
-#mainfooter-redirects a:hover {
+#mainfooter .dropbtn:hover {
     background: rgba(245, 196, 0, 0.1);
     transform: translateY(-2px);
 }
 
-/* underline animation */
-#mainfooter-redirects a::after {
+#mainfooter .dropbtn::after {
     content: "";
     position: absolute;
     left: 10px;
@@ -70,47 +33,56 @@
     transition: transform 0.25s ease;
 }
 
-#mainfooter-redirects a:hover::after {
+#mainfooter .dropdown:hover .dropbtn::after {
     transform: scaleX(1);
 }
 
-/* TABLET */
-@media (max-width: 768px) {
-    #mainfooter {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+#mainfooter .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
 
-    #mainfooter-redirects {
-        width: 100%;
-        justify-content: flex-start;
-        gap: 12px;
-    }
+    min-width: 200px;
+    background: #111316;
+    border: 2px solid #f5c400;
+    border-radius: 10px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+
+    z-index: 9999;
+    animation: footerDropdownFade 0.2s ease;
 }
 
-/* PHONE */
-@media (max-width: 480px) {
-    #mainfooter {
-        text-align: center;
-        align-items: center;
-    }
+#mainfooter .dropdown:hover .dropdown-content {
+    display: block;
+}
 
-    #mainfooter-somestuff {
-        flex-direction: column;
-        text-align: center;
-    }
+#mainfooter .dropdown-content a {
+    display: block;
+    padding: 10px 12px;
 
-    .homefooter-image {
-        width: 50px;
-        height: 50px;
-    }
+    color: #f5c400;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
 
-    #mainfooter-redirects {
-        justify-content: center;
-    }
+    transition: all 0.2s ease;
+}
 
-    #mainfooter-redirects a {
-        font-size: 13px;
-        padding: 8px 12px;
+#mainfooter .dropdown-content a:hover {
+    background: rgba(245, 196, 0, 0.12);
+    padding-left: 16px;
+}
+
+@keyframes footerDropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

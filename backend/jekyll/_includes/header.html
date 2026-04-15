@@ -4,9 +4,20 @@
         <p class="home">Fast, effective, safe.</p>
     </div>
     <nav id="mainfooter-redirects">
-        <a href="{{ 'home' | relative_url }}">Головна</a>
-        <a href="{{ 'safety' | relative_url }}">Безпека</a>
-        <a href="{{ 'idontknow' | relative_url }}">Щось</a>
+        <a href="{{ 'home' | relative_url }}">Home</a>
+        <a href="{{ 'safety' | relative_url }}">Safety</a>
+        <a href="{{ 'idontknow' | relative_url }}">SomethingCool</a>
+        <a href="{{ 'verify-work' | relative_url }}">Підтвердити власність роботи</a>
+        <div class="dropdown">
+        <a href="#" class="dropbtn">Щось ▾</a>
+
+        <div class="dropdown-content">
+            <a href="{{ 'sub1' | relative_url }}">Підкатегорія 1</a>
+            <a href="{{ 'sub2' | relative_url }}">Підкатегорія 2</a>
+            <a href="{{ 'sub3' | relative_url }}">Підкатегорія 3</a>
+        </div>
+    </div>
+        
     </nav>
 </footer>
 <link rel="stylesheet" href="{{ '/backend/assets/includes/header/header.css' | relative_url }}">
