@@ -7,19 +7,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>{{ page.title }}</title>
-        <link rel="icon" href="{{ page.icon }}" type="image/x-icon">
+        <link rel="icon" href="{% include {{ page.icon }} %}" type="image/x-icon">
         <noscript>You need to enable javascript to use this website!</noscript>
     </head>
     <body>
-        {% include header.html %}
-        {% if content %}
-          {{ content }}
-        {% endif %}
-        {% if page.loadmd %}
-            {% capture md %}
-                {% include {{ page.loadmd }} %}
-            {% endcapture %}
-            {{ md | markdownify }}
-        {% endif %}
+        {% include includes/header/main.html %}
+        <div id="content">
+            
+            {% if content %}
+              <div id="content-html">
+                {{ content }}
+              </div>
+            {% endif %}
+            {% if page.loadmd %}
+                <div id="content-md">
+                    {% capture md %}
+                        {% include {{ page.loadmd }} %}
+                    {% endcapture %}
+                
+                    {{ md | markdownify }}
+                </div>
+            {% endif %}
+        </div>
     </body>
 </html>

@@ -17,7 +17,7 @@ defaults:
     values:
       layout: default
       title: "Epiroc Safety"
-      icon: backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
+      icon: assets/icons/epiroc-logo-yellow-icon-nobg.png
   - scope:
       path: "home.html"
     values:
@@ -32,6 +32,7 @@ defaults:
       path: "safety.html"
     values:
       title: "Safety"
+      loadmd: markdowns/safety.md
   - scope:
       path: "digital.html"
     values:
@@ -55,5 +56,5 @@ defaults:
       path: "verify-work.html"
     values:
       title: "Verify Work"
-      icon: backend/assets/icons/verified.ico
+      icon: assets/icons/verified.ico
       
