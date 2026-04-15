@@ -5,7 +5,7 @@ baseurl: /epiroc-safety/
 author: catosoriginal
 email: catos@catosmail.slmail.me
 
-source: /epiroc-safety/
+source: .
 
 layouts_dir: backend/jekyll/_layouts
 includes_dir: backend/jekyll/_includes
@@ -22,7 +22,7 @@ defaults:
       path: "home.html"
     values:
       title: "Home"
-      loadmd: backend/jekyll/_includes/markdowns/home.md
+      loadmd: markdowns/home.md
   - scope:
       path: "index.html"
     values:
