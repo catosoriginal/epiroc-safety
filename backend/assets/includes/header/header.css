@@ -1,0 +1,116 @@
+/* AI used for CSS, im sorry but i dont know how to code CSS :( */
+/* MAIN FOOTER */
+#mainfooter {
+    background: #111316;
+    color: #e6e6e6;
+    padding: 24px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #f5c400;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LEFT SIDE */
+#mainfooter-somestuff {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.homefooter-image {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(245, 196, 0, 0.35));
+}
+
+#mainfooter-somestuff .home {
+    font-size: 14px;
+    font-weight: 500;
+    color: #cfcfcf;
+}
+
+/* NAV LINKS */
+#mainfooter-redirects {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+#mainfooter-redirects a {
+    color: #f5c400;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+/* hover effect */
+#mainfooter-redirects a:hover {
+    background: rgba(245, 196, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* underline animation */
+#mainfooter-redirects a::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 2px;
+    height: 2px;
+    background: #f5c400;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+#mainfooter-redirects a:hover::after {
+    transform: scaleX(1);
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    #mainfooter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #mainfooter-redirects {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+}
+
+/* PHONE */
+@media (max-width: 480px) {
+    #mainfooter {
+        text-align: center;
+        align-items: center;
+    }
+
+    #mainfooter-somestuff {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homefooter-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mainfooter-redirects {
+        justify-content: center;
+    }
+
+    #mainfooter-redirects a {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
