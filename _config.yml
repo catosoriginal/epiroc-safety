@@ -21,7 +21,7 @@ defaults:
       path: "home.html"
     values:
       title: "Home"
-      loadmd: "/epiroc-safety/backend/jekyll/_includes/markdowns/home.md"
+      loadmd: /epiroc-safety/backend/jekyll/_includes/markdowns/home.md
   - scope:
       path: "index.html"
     values:
