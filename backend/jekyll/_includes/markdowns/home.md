@@ -1,3 +1,7 @@
-hallo! this is a md!
+Epiroc is a global industrial technology company providing advanced equipment and integrated solutions for mining, construction, and infrastructure industries. The company operates in more than 150 countries and supports complex industrial operations in environments where reliability, precision, and continuous performance are essential.
 
-**hallo! fatass md!**
+Modern mining and construction industries require not only powerful machinery but also fully integrated systems that combine mechanical engineering, automation, and digital intelligence. Epiroc develops complete industrial ecosystems that allow customers to optimize productivity while maintaining operational stability and long-term efficiency.
+
+The company’s global presence ensures that solutions can be adapted to different geological, environmental, and operational conditions. Local engineering support combined with global standards allows Epiroc to maintain consistent performance and reliability across all regions.
+
+Innovation is a core strategic pillar. Continuous investment in research and development enables the company to improve equipment performance, reduce downtime, and increase operational efficiency. This long-term approach ensures that Epiroc remains a key driver of industrial transformation worldwide.

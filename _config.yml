@@ -24,6 +24,30 @@ defaults:
       title: "Home"
       loadmd: markdowns/home.md
   - scope:
+      path: "about.html"
+    values:
+      title: "About Company"
+      loadmd: markdowns/about.md
+  - scope:
+      path: "safety.html"
+    values:
+      title: "Safety"
+  - scope:
+      path: "digital.html"
+    values:
+      title: "Digital"
+      loadmd: markdowns/digital.md
+  - scope:
+      path: "technology.html"
+    values:
+      title: "Technology"
+      loadmd: markdowns/technology.md
+  - scope:
+      path: "ukraine.html"
+    values:
+      title: "Epiroc at Ukraine"
+      loadmd: markdowns/digital.md
+  - scope:
       path: "index.html"
     values:
       title: "Wait"
