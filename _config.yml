@@ -17,37 +17,43 @@ defaults:
     values:
       layout: default
       title: "Epiroc Safety"
-      icon: assets/icons/epiroc-logo-yellow-icon-nobg.png
+      icon: backend/assets/icons/epiroc-logo-yellow-icon-nobg.png
   - scope:
       path: "home.html"
     values:
       title: "Home"
-      loadmd: markdowns/home.md
+      loadmd: home.md
+      permalink: home
   - scope:
       path: "about.html"
     values:
       title: "About Company"
-      loadmd: markdowns/about.md
+      loadmd: about.md
+      permalink: about
   - scope:
       path: "safety.html"
     values:
       title: "Safety"
-      loadmd: markdowns/safety.md
+      loadmd: safety.md
+      permalink: safety
   - scope:
       path: "digital.html"
     values:
       title: "Digital"
-      loadmd: markdowns/digital.md
+      loadmd: digital.md
+      permalink: digital
   - scope:
       path: "technology.html"
     values:
       title: "Technology"
-      loadmd: markdowns/technology.md
+      loadmd: technology.md
+      permalink: technology
   - scope:
       path: "ukraine.html"
     values:
       title: "Epiroc at Ukraine"
-      loadmd: markdowns/ukraine.md
+      loadmd: ukraine.md
+      permalink: ukraine
   - scope:
       path: "index.html"
     values:
@@ -56,5 +62,6 @@ defaults:
       path: "verify-work.html"
     values:
       title: "Verify Work"
-      icon: assets/icons/verified.ico
+      icon: backend/assets/icons/verified.ico
+      permalink: verify-work
       
