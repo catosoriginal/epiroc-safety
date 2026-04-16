@@ -50,13 +50,13 @@
 }
 
 
-#mainfooter-redirects {
+#mainheader-redirects {
     display: flex;
     gap: 18px;
     flex-wrap: wrap;
 }
 
-#mainfooter-redirects a {
+#mainheader-redirects a {
     color: #f5c400;
     text-decoration: none;
     font-weight: 600;
@@ -68,13 +68,13 @@
 }
 
 
-#mainfooter-redirects a:hover {
+#mainheader-redirects a:hover {
     background: rgba(245, 196, 0, 0.1);
     transform: translateY(-2px);
 }
 
 
-#mainfooter-redirects a::after {
+#mainheader-redirects a::after {
     content: "";
     position: absolute;
     left: 10px;
@@ -86,18 +86,18 @@
     transition: transform 0.25s ease;
 }
 
-#mainfooter-redirects a:hover::after {
+#mainheader-redirects a:hover::after {
     transform: scaleX(1);
 }
 
 
 @media (max-width: 768px) {
-    #mainfooter {
+    #mainheader {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    #mainfooter-redirects {
+    #mainheader-redirects {
         width: 100%;
         justify-content: flex-start;
         gap: 12px;
@@ -106,26 +106,26 @@
 
 
 @media (max-width: 480px) {
-    #mainfooter {
+    #mainheader {
         text-align: center;
         align-items: center;
     }
 
-    #mainfooter-somestuff {
+    #mainheader-somestuff {
         flex-direction: column;
         text-align: center;
     }
 
-    .homefooter-image {
+    .homeheader-image {
         width: 50px;
         height: 50px;
     }
 
-    #mainfooter-redirects {
+    #mainheader-redirects {
         justify-content: center;
     }
 
-    #mainfooter-redirects a {
+    #mainheader-redirects a {
         font-size: 13px;
         padding: 8px 12px;
     }
