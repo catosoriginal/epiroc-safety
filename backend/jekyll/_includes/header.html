@@ -1,9 +1,9 @@
-<header id="mainfooter">
-    <div id="mainfooter-somestuff">
-        <img class="homefooter-image" decoding="async" src="{{ 'backend/assets/icons/epiroc-logo-yellow-icon-nobg.png' | relative_url }}" alt="Best Company Logo" />
+<header id="mainheader">
+    <div id="mainheader-somestuff">
+        <img class="homeheader-image" decoding="async" src="{{ 'backend/assets/icons/epiroc-logo-yellow-icon-nobg.png' | relative_url }}" alt="Best Company Logo" />
         <p class="home">Fast, effective, safe.</p>
     </div>
-    <nav id="mainfooter-redirects">
+    <nav id="mainheader-redirects">
         <a href="{{ '/home' | relative_url }}">Home</a>
         <a href="{{ '/about' | relative_url }}">About Company</a>
         <a href="{{ '/safety' | relative_url }}">Safety</a>
@@ -17,7 +17,7 @@
 <style>
     
 
-#mainfooter {
+#mainheader {
     background: #111316;
     color: #e6e6e6;
     padding: 24px 18px;
@@ -30,20 +30,20 @@
 }
 
 
-#mainfooter-somestuff {
+#mainheader-somestuff {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.homefooter-image {
+.homeheader-image {
     width: 42px;
     height: 42px;
     object-fit: contain;
     filter: drop-shadow(0 0 6px rgba(245, 196, 0, 0.35));
 }
 
-#mainfooter-somestuff .home {
+#mainheader-somestuff .home {
     font-size: 14px;
     font-weight: 500;
     color: #cfcfcf;
