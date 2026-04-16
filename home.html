@@ -1,2 +1,28 @@
 ---
 ---
+
+<div id="about-company">
+    <p>Epiroc is a global industrial technology company providing advanced equipment and integrated solutions for mining, construction, and infrastructure industries. The company operates in more than 150 countries and supports complex industrial operations in environments where reliability, precision, and continuous performance are essential.</p>
+    <div class="images">
+        <img alt="Epiroc quarters opening" src="{{ 'backend/assets/stockimages/epiroc-quarters-opening.jpg' | relative_url }}">
+        <img alt="Epiroc office" src="{{ 'backend/assets/stockimages/epiroc-office.jpg' | relative_url }}">
+        <img alt="Epiroc table discussion" src="{{ 'backend/assets/stockimages/epiroc-table-disscusion.png' | relative_url }}">
+    </div>
+</div>
+<style>
+    #about-company {
+        font-family: "Franklin Gothic Medium", "Franklin Gothic", Arial, sans-serif;
+        background-color: rgb(44, 44, 44);
+        border: 3px dotted white;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    #about-company .images {
+        flex: 1 1 300px;
+        height: 220px;
+        object-fit: cover;
+    }
+</style>

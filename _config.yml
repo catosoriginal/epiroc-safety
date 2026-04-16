@@ -22,7 +22,6 @@ defaults:
       path: "home.html"
     values:
       title: "Home"
-      loadmd: markdowns/home.md
       permalink: home
   - scope:
       path: "about.html"
