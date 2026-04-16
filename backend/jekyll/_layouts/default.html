@@ -33,6 +33,13 @@
               </div>
             {% endif %}
             {% if page.loadmd %}
+                <style>
+                    #content #content-md {
+                        max-width: 100%;
+                        width: 100%;
+                        overflow-x: scroll;
+                    }
+                </style>
                 <div id="content-md">
                     {% capture md %}
                         {% include {{ page.loadmd }} %}
