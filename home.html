@@ -14,15 +14,32 @@
         font-family: "Franklin Gothic Medium", "Franklin Gothic", Arial, sans-serif;
         background-color: rgb(44, 44, 44);
         border: 3px dotted white;
-        max-width: 100%;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        padding: 10px;
     }
+
+
+    #about-company p {
+        flex: 1 1 300px;
+        margin: 0;
+    }
+
+
     #about-company .images {
         flex: 1 1 300px;
-        height: 220px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+    #about-company .images img {
+        flex: 1 1 calc(33.333% - 10px);
+        height: 150px;
         object-fit: cover;
+        display: block;
     }
 </style>
