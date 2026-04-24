@@ -1,17 +1,15 @@
 <header id="mainheader">
     <div id="mainheader-somestuff">
         <img class="homeheader-image" decoding="async" src="{{ 'backend/assets/icons/epiroc-logo-yellow-icon-nobg.png' | relative_url }}" alt="Best Company Logo" />
-        <p class="home">Fast, effective, safe.</p>
+        <p class="home"><strong>Fast, effective, safe.</strong></p>
     </div>
     <nav id="mainheader-redirects">
-        <a href="{{ '/home' | relative_url }}">Home</a>
-        <a href="{{ '/about' | relative_url }}">About Company</a>
-        <a href="{{ '/safety' | relative_url }}">Safety</a>
-        <a href="{{ '/digital' | relative_url }}">Digital</a>
-        <a href="{{ '/technology' | relative_url }}">Technology</a>
-        <a href="{{ '/ukraine' | relative_url }}">Epiroc at Ukraine</a>
-        <a href="{{ '/verify-work' | relative_url }}">Verify Work</a>
-        <a class="fatie" href="{{ '/project' | relative_url }}">Project</a>
+        <a href="{{ '/about-epiroc' | relative_url }}">About Epiroc</a>
+        <a href="{{ '/employee-safety-technologies' | relative_url }}">Employee Safety Technologies</a>
+        <a href="{{ '/comparison-with-competitors-safety' | relative_url }}">Comparison with competitors safety</a>
+        <a href="{{ '/technologies' | relative_url }}">Epiroc Technologies</a>
+        <a href="{{ '/partners' | relative_url }}">Partners</a>
+        <a class="fatie" href="{{ '/contact-us' | relative_url }}">Contact Us</a>
     </div>
 </header>
 
@@ -19,13 +17,13 @@
     
 
 #mainheader {
-    background: #111316;
+    background: var(--pagecolor1);
     color: #e6e6e6;
     padding: 24px 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid #f5c400;
+    border-bottom: 2px solid var(--pagecolor2);
     flex-wrap: wrap;
     font-family: 'Manrope', sans-serif;
 }
@@ -41,13 +39,13 @@
     width: 42px;
     height: 42px;
     object-fit: contain;
-    filter: drop-shadow(0 0 6px rgba(245, 196, 0, 0.35));
+    filter: drop-shadow(0 0 6px var(--pagecolor3));
 }
 
 #mainheader-somestuff .home {
     font-size: 14px;
     font-weight: 500;
-    color: #cfcfcf;
+    color: var(--pagecolor3);
 }
 
 
@@ -58,7 +56,7 @@
 }
 
 #mainheader-redirects a {
-    color: #f5c400;
+    color: var(--pagecolor3);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
@@ -69,13 +67,13 @@
 }
 
 #mainheader-redirects .fatie {
-    background-color: #f5c400;
+    background-color: var(--pagecolor2);
     color: rgb(72, 101, 115);
 }
 
 
 #mainheader-redirects a:hover {
-    background: rgba(245, 196, 0, 0.1);
+    background: var(--pagecolor1);
     transform: translateY(-2px);
 }
 
@@ -87,7 +85,7 @@
     right: 10px;
     bottom: 2px;
     height: 2px;
-    background: #f5c400;
+    background: var(--pagecolor3);
     transform: scaleX(0);
     transition: transform 0.25s ease;
 }

@@ -1,0 +1,456 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- making site viewport, so website can look perfect on any device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- changing site charset -->
+        <meta charset="UTF-8">
+        <!-- changing site title -->
+        <title>Epiroc Safety</title>
+        <!-- chaning site icon -->
+        <link rel="icon" href="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png" type="image/x-icon">
+
+        <!-- No javascript enabled in browser warning. (but site cant operate normal without javascript) -->
+        <noscript>You need to enable javascript to use this website!</noscript>
+
+        <!-- Fonts imports -->
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet"> <!-- Manrope font -->
+        <link href="https://api.fontshare.com/v2/css?f[]=supreme@400,500,600,700&display=swap" rel="stylesheet"> <!-- Supreme font-->
+        
+    </head>
+    <body>
+        
+        <!-- some styles -->
+        <style> 
+            :root {
+                --pagecolor1: rgb(72, 101, 115);
+                --pagecolor2: rgb(255, 199, 43);
+                --pagecolor3: rgb(238, 238, 238);
+            }
+            body {
+                background-color: rgb(238, 238, 238);
+                color: rgb(72, 101, 115);
+                font-family: 'Supreme', sans-serif;
+            }
+            #page-wrapper {
+                max-width: 100%;
+                width: 100%;
+                margin: 0 auto;
+            }
+            #page-wrapper .content {
+                max-width: 100%;
+                width: 100%;
+                overflow-x: hidden;
+                display: block;
+            }
+            #page-wrapper .content .md {
+                max-width: 100%;
+                width: 100%;
+                overflow-x: scroll;
+            }
+        
+        </style>
+        <!-- main page wrapper (to disable page zoom  etc.) -->
+        <div id="page-wrapper">
+            <!-- inserting header to page -->
+            <header id="mainheader">
+    <div id="mainheader-somestuff">
+        <img class="homeheader-image" decoding="async" src="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png" alt="Best Company Logo" />
+        <p class="home"><strong>Fast, effective, safe.</strong></p>
+    </div>
+    <nav id="mainheader-redirects">
+        <a href="/epiroc-safety/about-epiroc">About Epiroc</a>
+        <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
+        <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
+        <a href="/epiroc-safety/technologies">Epiroc Technologies</a>
+        <a href="/epiroc-safety/partners">Partners</a>
+        <a class="fatie" href="/epiroc-safety/contact-us">Contact Us</a>
+    </div>
+</header>
+
+<style>
+    
+
+#mainheader {
+    background: var(--pagecolor1);
+    color: #e6e6e6;
+    padding: 24px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--pagecolor2);
+    flex-wrap: wrap;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+#mainheader-somestuff {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.homeheader-image {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px var(--pagecolor3));
+}
+
+#mainheader-somestuff .home {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--pagecolor3);
+}
+
+
+#mainheader-redirects {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+#mainheader-redirects a {
+    color: var(--pagecolor3);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+#mainheader-redirects .fatie {
+    background-color: var(--pagecolor2);
+    color: rgb(72, 101, 115);
+}
+
+
+#mainheader-redirects a:hover {
+    background: var(--pagecolor1);
+    transform: translateY(-2px);
+}
+
+
+#mainheader-redirects a::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 2px;
+    height: 2px;
+    background: var(--pagecolor3);
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+#mainheader-redirects a:hover::after {
+    transform: scaleX(1);
+}
+
+
+@media (max-width: 768px) {
+    #mainheader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #mainheader-redirects {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #mainheader {
+        text-align: center;
+        align-items: center;
+    }
+
+    #mainheader-somestuff {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homeheader-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mainheader-redirects {
+        justify-content: center;
+    }
+
+    #mainheader-redirects a {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+</style>
+
+
+            <div class="content">
+            
+                
+                <div class="html">
+                    <!-- inserting page content to page -->
+                    <div class="mainsafeties safetiesbox">
+    <p class="maincytate">Employee Safety Technologies</p>
+    <p class="sub5">Employee safety is the top priority. Without it, operations cannot continue. It includes technical solutions, organizational measures, and strict rules for the operation of equipment. Employee safety is a key priority in modern industrial operations. In mining and construction environments, where risks are significantly higher, advanced safety technologies are an essential part of daily work. Epiroc applies a comprehensive safety approach that combines engineering design, automation, and preventive protection systems to minimize risks and protect personnel in extreme working conditions.</p>
+    <div class="images">
+        <img alt="Epiroc control tower" src="/epiroc-safety/backend/assets/stockimages/epiroc-control-tower.jpg">
+        <img alt="Epiroc smart rock car" src="/epiroc-safety/backend/assets/stockimages/smartrocd65drillrigdebutsinus.jpg">
+    </div>
+</div>
+
+
+<div class="integratedsafetysystems safetiesbox">
+    <p class="maincytate">Integrated Safety Systems</p>
+    <p class="sub5">Modern Epiroc equipment is equipped with intelligent systems that continuously monitor machine status and working conditions in real time.</p>
+    <p class="prelist-text">These systems include:</p>
+    <ul>
+        <li>real-time monitoring of critical machine components</li>
+        <li>automatic detection of faults and anomalies</li>
+        <li>operator warning systems for potential hazards</li>
+        <li>overload and abnormal operation detection</li>
+    </ul>
+    <p class="afterlist-text">Such technologies help identify risks at an early stage, before they develop into critical failures or accidents.</p>
+</div>
+
+
+<div class="fopsprotectionsystem safetiesbox">
+    <p class="maincytate">FOPS Protection System</p>
+    <p class="sub5">FOPS (Falling Object Protective Structure) is a structural safety system designed to protect the operator inside the cabin.</p>
+    <p class="prelist-text">Its main purpose is to protect against falling objects in mining and construction environments, such as:</p>
+    <ul>
+        <li>rocks and debris</li>
+        <li>structural fragments</li>
+        <li>tools or loose equipment components</li>
+    </ul>
+    <p class="afterlist-text">The operator’s cabin is engineered to withstand high-impact forces, using reinforced structures and tested high-strength materials.</p>
+    <p class="afterlist-text">FOPS is a passive safety system that ensures the operator’s survival space remains protected even under extreme conditions.</p>
+</div>  
+
+<div class="dropspreventionsystem safetiesbox">
+    <p class="maincytate">DROPS Prevention System</p>
+    <p class="sub5">DROPS (Dropped Objects Prevention Scheme) is a set of preventive measures designed to eliminate the risk of objects falling from equipment or structures.</p>
+    <p class="sub5">Unlike FOPS, which protects the operator, DROPS focuses on preventing hazards before they occur.</p>
+    <p class="prelist-text">Key measures include:</p>
+    <ul>
+        <li>safety tethering of tools and components</li>
+        <li>secure fastening and locking systems</li>
+        <li>vibration-resistant mounting solutions</li>
+        <li>regular equipment inspections</li>
+        <li>strict control of elevated components</li>
+    </ul>
+    <p class="afterlist-text">DROPS is especially important in underground and multi-level working environments such as mines.</p>
+</div>  
+
+<div class="emergencysafetysystems safetiesbox">
+    <p class="maincytate">Emergency Safety Systems</p>
+    <p class="sub5">Epiroc machines are equipped with advanced emergency response systems designed for immediate action in critical situations.</p>
+    <p class="prelist-text">These include:</p>
+    <ul>
+        <li>automatic machine shutdown systems</li>
+        <li>emergency stop functions</li>
+        <li>safety interlock mechanisms</li>
+        <li>automatic machine shutdown systems</li>
+    </ul>
+    <p class="afterlist-text">These systems ensure rapid response and help prevent escalation of dangerous events.</p>
+</div>  
+
+<div class="workforcesafetysupport safetiesbox">
+    <p class="maincytate">Workforce Safety Support</p>
+    <p class="sub5">In addition to technical solutions, operational safety is supported through structured workforce protection measures.</p>
+    <p class="prelist-text">These include:</p>
+    <ul>
+        <li>mandatory safety training programs</li>
+        <li>regular safety briefings and inductions</li>
+        <li>use of personal protective equipment (PPE)</li>
+        <li>strict adherence to safety procedures</li>
+    </ul>
+    <p class="afterlist-text">Every employee is trained to understand risks and respond correctly in potentially hazardous situations.</p>
+</div>  
+
+<div class="safetyphilosophy safetiesbox">
+    <p class="maincytate">Safety Philosophy</p>
+    <p class="sub5">The core principle of Epiroc is that safety is not an additional feature — it is an integral part of every technology and process.</p>
+    <p class="sub5">Modern safety engineering focuses not only on controlling risks, but on preventing them through design, automation, and intelligent systems.</p>
+</div>  
+
+<div class="conclusion safetiesbox">
+    <p class="maincytate">Conclusion</p>
+    <p class="prelist-text">Employee Safety Technologies at Epiroc represent a fully integrated safety ecosystem that includes:</p>
+    <ul>
+        <li>intelligent monitoring systems</li>
+        <li>structural protection (FOPS)</li>
+        <li>preventive safety measures (DROPS)</li>
+        <li>training and operational procedures</li>
+    </ul>
+    <p class="afterlist-text">Every employee is trained to understand risks and respond correctly in potentially hazardous situations.</p>
+</div>  
+
+<style>
+    .safetiesbox {
+        margin-bottom: 7px;
+        max-width: 100%;
+        width: 100%;
+        background-color: var(--pagecolor1);
+        /* padding: top right bottom left; */
+        padding: 5px 0 5px 0 ;
+    }
+    .safetiesbox p {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .safetiesbox .maincytate {
+        font-size: clamp(37px, 45px, 68px);
+        color: var(--pagecolor2);
+    }
+    .safetiesbox .sub5 {
+        font-size: clamp(20px, 30px, 45px);
+        color: var(--pagecolor3);
+    }
+    .safetiesbox .prelist-text {
+        font-size: clamp(21px, 25px, 33px);
+        color: var(--pagecolor2 );
+    }
+    .safetiesbox .afterlist-text {
+        font-size: clamp(21px, 25px, 33px);
+        color: var(--pagecolor2 );
+    }
+    .safetiesbox ul {
+        list-style-position: inside;
+    }
+    .safetiesbox ul li {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: clamp(19px, 29px, 40px);
+        color: var(--pagecolor3);
+    }
+
+    .safetiesbox .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .safetiesbox .images img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+    }
+
+</style>
+                </div>
+                
+                
+                <!-- inserting footer to page -->
+                <div id="mainfooter">
+    <div class="title">
+        <div class="epirocsocials">
+            <p class="title"><strong>Follow Epiroc on socials</strong></p>
+            <a href="https://www.facebook.com/epirocgroup/">Facebook</a>
+            <a href="https://www.linkedin.com/company/epiroc">LinkedIn</a>
+            <a href="https://www.instagram.com/epirocgroup">Instagram</a>
+        </div>
+        <div class="devsocials">
+            <p class="title"><strong>Follow developer on socials</strong></p>
+            <a href="https://linktr.ee/catosoriginal">Developer Bio</a>
+            <a href="https://github.com/catosoriginal">Github</a>
+            <a href="https://github.com/catosoriginal/epiroc-safety">This Github Project</a>
+        </div>
+    </div>
+    <div class="youalsomaylike">
+        <p><strong>Also read</strong></p>
+        <a href="/epiroc-safety/about-epiroc">About Epiroc</a>
+        <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
+        <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
+        <a href="/epiroc-safety/technologies">Epiroc Technologies</a>
+        <a href="/epiroc-safety/partners">Partners</a>
+        <a href="/epiroc-safety/contact-us">Contact Us</a>
+    </div>
+</div>
+<style>
+    #mainfooter {
+        max-width: 100%;
+        width: 100%;
+        height: fit-content;
+        background-color: rgb(255, 255, 255);
+        border: 3px solid rgb(253, 255, 132);
+    }
+    #mainfooter .youalsomaylike {
+        background-color: rgb(72, 101, 115);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        flex: 1;
+        align-items: center;
+    }
+    #mainfooter .youalsomaylike p {
+        color: rgb(255, 199, 43);
+        font-size: clamp(18px, 22vw, 25px);
+    }
+    #mainfooter .youalsomaylike a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: 0.2s;
+        font-size: clamp(15px, 17vw, 22px);
+        transition: all 0.3s ease;
+        border-radius: 13px;
+    }
+    #mainfooter .youalsomaylike a::after {
+        content: " →";
+    }
+    #mainfooter .youalsomaylike a:hover {
+        color: rgb(72, 101, 115);
+        background-color: rgb(255, 199, 43);
+    }
+    #mainfooter .title {
+        background-color: rgb(255, 199, 43);
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    #mainfooter .title .epirocsocials,
+    #mainfooter .title .devsocials {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        flex: 1;
+        align-items: center;
+    }
+    #mainfooter .title .epirocsocials p,
+    #mainfooter .title .devsocials p {
+        color: rgb(67, 86, 99);
+    }
+    #mainfooter .title .epirocsocials a, 
+    #mainfooter .title .devsocials a {
+        color: rgb(72, 101, 115);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 13px;
+    }
+    #mainfooter .title .devsocials a:hover,
+    #mainfooter .title .epirocsocials a:hover {
+        background-color: rgb(72, 101, 115);
+        color: rgb(255, 199, 43);
+    }
+
+</style>
+            </div>
+        </div>
+    </body>
+</html>

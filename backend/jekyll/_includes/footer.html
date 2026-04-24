@@ -1,16 +1,26 @@
 <div id="mainfooter">
     <div class="title">
         <div class="epirocsocials">
-            <p class="title">Follow Epiroc on socials</p>
+            <p class="title"><strong>Follow Epiroc on socials</strong></p>
             <a href="https://www.facebook.com/epirocgroup/">Facebook</a>
             <a href="https://www.linkedin.com/company/epiroc">LinkedIn</a>
             <a href="https://www.instagram.com/epirocgroup">Instagram</a>
         </div>
         <div class="devsocials">
-            <p class="title">Follow developer on socials</p>
+            <p class="title"><strong>Follow developer on socials</strong></p>
+            <a href="https://linktr.ee/catosoriginal">Developer Bio</a>
             <a href="https://github.com/catosoriginal">Github</a>
-            <a href="https://github.com/catosoriginal/epiroc-safety">Github Project</a>
+            <a href="https://github.com/catosoriginal/epiroc-safety">This Github Project</a>
         </div>
+    </div>
+    <div class="youalsomaylike">
+        <p><strong>Also read</strong></p>
+        <a href="{{ '/about-epiroc' | relative_url }}">About Epiroc</a>
+        <a href="{{ '/employee-safety-technologies' | relative_url }}">Employee Safety Technologies</a>
+        <a href="{{ '/comparison-with-competitors-safety' | relative_url }}">Comparison with competitors safety</a>
+        <a href="{{ '/technologies' | relative_url }}">Epiroc Technologies</a>
+        <a href="{{ '/partners' | relative_url }}">Partners</a>
+        <a href="{{ '/contact-us' | relative_url }}">Contact Us</a>
     </div>
 </div>
 <style>
@@ -20,6 +30,34 @@
         height: fit-content;
         background-color: rgb(255, 255, 255);
         border: 3px solid rgb(253, 255, 132);
+    }
+    #mainfooter .youalsomaylike {
+        background-color: rgb(72, 101, 115);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        flex: 1;
+        align-items: center;
+    }
+    #mainfooter .youalsomaylike p {
+        color: rgb(255, 199, 43);
+        font-size: clamp(18px, 22vw, 25px);
+    }
+    #mainfooter .youalsomaylike a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: 0.2s;
+        font-size: clamp(15px, 17vw, 22px);
+        transition: all 0.3s ease;
+        border-radius: 13px;
+    }
+    #mainfooter .youalsomaylike a::after {
+        content: " →";
+    }
+    #mainfooter .youalsomaylike a:hover {
+        color: rgb(72, 101, 115);
+        background-color: rgb(255, 199, 43);
     }
     #mainfooter .title {
         background-color: rgb(255, 199, 43);
@@ -46,10 +84,13 @@
     #mainfooter .title .devsocials a {
         color: rgb(72, 101, 115);
         text-decoration: none;
-        transition: 0.2s;
+        transition: all 0.3s ease;
+        border-radius: 13px;
     }
-    #mainfooter .title .devsocials a:hover {
-        opacity: 0.7;
+    #mainfooter .title .devsocials a:hover,
+    #mainfooter .title .epirocsocials a:hover {
+        background-color: rgb(72, 101, 115);
+        color: rgb(255, 199, 43);
     }
 
 </style>

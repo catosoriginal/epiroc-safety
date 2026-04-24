@@ -10,6 +10,13 @@ source: .
 layouts_dir: backend/jekyll/_layouts
 includes_dir: backend/jekyll/_includes
 
+pagecolor1: rgb(72, 101, 115)
+pagecolor2: rgb(255, 199, 43)
+pagecolor3: rgb(238, 238, 238)
+
+exclude:
+  - github
+  - .github
 
 defaults:
   - scope:
