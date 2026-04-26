@@ -41,11 +41,6 @@ defaults:
       title: "Safety"
       permalink: /employee-safety-technologies
   - scope:
-      path: "contact-us.html"
-    values:
-      title: "Contact Us!"
-      permalink: /contact-us
-  - scope:
       path: "site-project.html"
     values:
       title: "Site Project"

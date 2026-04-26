@@ -18,7 +18,7 @@
         <li>operator warning systems for potential hazards</li>
         <li>overload and abnormal operation detection</li>
     </ul>
-    <div class="images">
+    <div class="images num2">
         <img alt="Epiroc control tower" src="{{ '/backend/assets/stockimages/epiroc-control-tower.jpg' | relative_url }}">
         <img alt="Epiroc smart rock car" src="{{ '/backend/assets/stockimages/smartrocd65drillrigdebutsinus.jpg' | relative_url }}">
     </div>
@@ -35,7 +35,7 @@
         <li>structural fragments</li>
         <li>tools or loose equipment components</li>
     </ul>
-    <div class="images">
+    <div class="images num1">
         <img alt="Epiroc fops protection system car" src="{{ '/backend/assets/stockimages/EX_Guarding_FOPS-5.jpg' | relative_url }}">
     </div>
     <p class="afterlist-text">The operator’s cabin is engineered to withstand high-impact forces, using reinforced structures and tested high-strength materials.</p>
@@ -54,7 +54,7 @@
         <li>regular equipment inspections</li>
         <li>strict control of elevated components</li>
     </ul>
-    <div class="images">
+    <div class="images num1">
         <img alt="Epiroc drops protection system car" src="{{ '/backend/assets/stockimages/Dropped-Objects-Prevention-Scheme-DROPS.png' | relative_url }}">
     </div>
     <p class="afterlist-text">DROPS is especially important in underground and multi-level working environments such as mines.</p>
@@ -70,7 +70,7 @@
         <li>safety interlock mechanisms</li>
         <li>automatic machine shutdown systems</li>
     </ul>
-    <div class="images">
+    <div class="images num2">
         <img alt="Emergency Stop Buttons" src="{{ '/backend/assets/stockimages/emergency-stop-safety-cover-lockout-device-1024x576.jpg' | relative_url }}">
         <img alt="Emergency Stop Buttons" src="{{ '/backend/assets/stockimages/istockphoto-899069678-170667a.jpg' | relative_url }}">
     </div>
@@ -87,7 +87,7 @@
         <li>use of personal protective equipment (PPE)</li>
         <li>strict adherence to safety procedures</li>
     </ul>
-    <div class="images">
+    <div class="images num2">
         <img alt="Staff Trainings" src="{{ '/backend/assets/stockimages/trainings.png' | relative_url }}">
         <img alt="Staff Trainings" src="{{ '/backend/assets/stockimages/portrait-woman-worker-and-engineer-under-inspectio-2021-10-27-15-50-42-utc-1980x1320.jpg' | relative_url }}">
     </div>
@@ -157,10 +157,18 @@
 
     .safetiesbox .images {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    } /* grid-template-columns: repeat(3, 1fr); */
+    .safetiesbox .images.num1 {
+        grid-template-columns: repeat(1, 1250px);
     }
-
+    .safetiesbox .images.num2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .safetiesbox .images.num3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     .safetiesbox .images img {
         width: 100%;
         aspect-ratio: 16 / 9;
@@ -175,60 +183,26 @@
     /* */
 
     .mainsafeties {
-        margin-bottom: 7px;
-        max-width: 100%;
-        width: 100%;
         background-color: var(--pagecolor2);
-        /* padding: top right bottom left; */
-        padding: 5px 0 5px 0 ;
-    }
-    .mainsafeties p {
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
     }
     .mainsafeties .maincytate {
-        font-size: clamp(37px, 45px, 68px);
         color: var(--pagecolor1);
-        font-weight: 700;
-        line-height: 1.2;
     }
     .mainsafeties .sub5 {
-        font-size: clamp(20px, 30px, 45px);
         color: var(--pagecolor2);
         background-color: var(--pagecolor1);
     }
     .mainsafeties .prelist-text {
-        font-size: clamp(21px, 25px, 33px);
         color: var(--pagecolor1 );
     }
     .mainsafeties .afterlist-text {
-        font-size: clamp(21px, 25px, 33px);
         color: var(--pagecolor1 );
     }
     .mainsafeties ul {
-        list-style-position: inside;
         background-color: var(--pagecolor1);
     }
     .mainsafeties ul li {
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
-        font-size: clamp(19px, 29px, 40px);
         color: var(--pagecolor2);
-    }
-
-    .mainsafeties .images {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-
-    .mainsafeties .images img {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-        display: block;
     }
 
 </style>

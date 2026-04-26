@@ -13,6 +13,7 @@
         <link rel="icon" href="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png" type="image/x-icon">
 
         <!-- No javascript enabled in browser warning. (but site cant operate normal without javascript) -->
+        <!-- i created javascript only for owner verify page. -->
         <noscript>You need to enable javascript to use this website!</noscript>
 
         <!-- Fonts imports -->
@@ -65,7 +66,7 @@
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
         <a href="/epiroc-safety/partners">Partners</a>
-        <a class="fatie" href="/epiroc-safety/contact-us">Contact Us</a>
+        <a class="fatie" href="/epiroc-safety/site-project">Site Project</a>
     </div>
 </header>
 
@@ -130,8 +131,9 @@
 
 
 #mainheader-redirects a:hover {
-    background: var(--pagecolor1);
+    background-color: var(--pagecolor3);
     transform: translateY(-2px);
+    color: var(--pagecolor1);
 }
 
 
@@ -199,17 +201,176 @@
                 
                 <div class="html">
                     <!-- inserting page content to page -->
-                    <p id="just-info-text">To confirm that I am the owner of this work, you need to take the code I sent with the work, paste it below, and click the button</p>
-<input id="codeinput" placeholder="Paste code here">
-<button id="verifyworkbutton" >Verify</button>
-<p id="verifystatus" style="color:gray" >Waiting for code...</p>
+                    <div class="mainsafeties safetiesbox">
+    <p class="maincytate">Verify Work Owner</p>
+    <p class="sub5">This is done so that no one else can pass off the project as their own.</p>
+</div>
+
+<div class="safetiesbox">
+    <p class="prelist-text">To verify work, you need:</p>
+    <ul>
+        <li>1. Copy the code from the message that I sent you with the work</li>
+        <li>2. Insert the code in the 'Paste code here' field</li>
+        <li>3. Click on 'Verify' button</li>
+    </ul>
+    <p class="afterlist-text">Thats it! After that, you will receive an answer whether I am the owner of the website or not</p>
+</div>
+
+<div class="safetiesbox">
+    <p class="maincytate">Why is this safe?</p>
+    <ul>
+        <li>The code is encrypted in sha256, which means that no one will be able to obtain the source code, even if they look at the page's source code</li>
+        <li>The code is issued only to the inspector, and to no one else. That is, no one other than the inspector will be able to verify the owner.</li>
+    </ul>
+</div>
+
+<div class="verifybox">
+    <input class="codeinput" placeholder="Paste code here">
+    <button class="verifyworkbutton" >Verify</button>
+    <p class="verifystatus">Waiting for code...</p>
+</div>
+
+
+<style>
+    .verifybox {
+        max-width: 100%;
+        width: 100%;
+        background-color: var(--pagecolor1);
+        display: flex;
+        flex-direction: column
+    }
+    .verifybox .codeinput {
+        border: 0;
+        background-color: var(--pagecolor2);
+        color: var(--pagecolor1);
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: clamp(24px, 15px, 56px);
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .verifybox .verifyworkbutton {
+        border: 0;
+        background-color: var(--pagecolor2);
+        color: var(--pagecolor1);
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: clamp(24px, 15px, 56px);
+        font-weight: 700;
+        line-height: 1.2;
+        border: 3px dotted var(--pagecolor1);
+        border-radius: 15px;
+    }
+    .verifybox .verifyworkbutton:hover {
+        cursor: pointer;
+        border-radius: 50px;
+    }
+    .verifybox .verifystatus {
+        border: 0;
+        background-color: var(--pagecolor1);
+        color: var(--pagecolor2);
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: clamp(24px, 15px, 56px);
+        font-weight: 700;
+        line-height: 1.2;
+        border: 3px dotted var(--pagecolor2);
+        border-radius: 15px;
+    }
+    .safetiesbox {
+        margin-bottom: 7px;
+        max-width: 100%;
+        width: 100%;
+        background-color: var(--pagecolor1);
+        /* padding: top right bottom left; */
+        padding: 5px 0 5px 0 ;
+    }
+    .safetiesbox p {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .safetiesbox .maincytate {
+        font-size: clamp(37px, 45px, 68px);
+        color: var(--pagecolor2);
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .safetiesbox .sub5 {
+        font-size: clamp(20px, 30px, 45px);
+        color: var(--pagecolor3);
+    }
+    .safetiesbox .prelist-text {
+        font-size: clamp(21px, 25px, 33px);
+        color: var(--pagecolor2 );
+    }
+    .safetiesbox .afterlist-text {
+        font-size: clamp(21px, 25px, 33px);
+        color: var(--pagecolor2 );
+    }
+    .safetiesbox ul {
+        list-style-position: inside;
+    }
+    .safetiesbox ul li {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: clamp(19px, 29px, 40px);
+        color: var(--pagecolor3);
+    }
+
+    .safetiesbox .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .safetiesbox .images img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* */
+    /* */
+    /* */
+    /* */
+    /* */
+
+    .mainsafeties {
+        background-color: var(--pagecolor2);
+    }
+    .mainsafeties .maincytate {
+        color: var(--pagecolor1);
+    }
+    .mainsafeties .sub5 {
+        color: var(--pagecolor2);
+        background-color: var(--pagecolor1);
+    }
+    .mainsafeties .prelist-text {
+        color: var(--pagecolor1 );
+    }
+    .mainsafeties .afterlist-text {
+        color: var(--pagecolor1 );
+    }
+    .mainsafeties ul {
+        background-color: var(--pagecolor1);
+    }
+    .mainsafeties ul li {
+        color: var(--pagecolor2);
+    }
+</style>
 
 <script type="module">
 document.addEventListener("DOMContentLoaded", () => {
-    
-    const codeinput = document.querySelector("#codeinput");
-    const verifyworkbutton = document.querySelector("#verifyworkbutton");
-    const verifystatus = document.querySelector("#verifystatus");
+    const verifybox = document.querySelector(".verifybox")
+    const codeinput = verifybox.querySelector(".codeinput");
+    const verifyworkbutton = verifybox.querySelector(".verifyworkbutton");
+    const verifystatus = verifybox.querySelector(".verifystatus");
 
     const cachedcorrectcode = "40f6fe3133fea13a4fff078ca841f5b8a3da96ea8bc7f4de56d4ffcef2856823"; // safe because cant decrypt sha256
     
@@ -225,7 +386,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputHash = await sha256(codeinput.value);
 
     if (inputHash === cachedcorrectcode) {
-        verifystatus.textContent = "Owner confirmed!";
+        verifystatus.textContent = "Owner verified!";
         verifystatus.style.color = "green";
     } else {
         verifystatus.textContent = "The code is incorrect: Owner not verified";
@@ -240,13 +401,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 <!-- inserting footer to page -->
                 <div id="mainfooter">
     <div class="title">
-        <div class="epirocsocials">
+        <div class="linkers epirocsocials">
             <p class="title"><strong>Follow Epiroc on socials</strong></p>
             <a href="https://www.facebook.com/epirocgroup/">Facebook</a>
             <a href="https://www.linkedin.com/company/epiroc">LinkedIn</a>
             <a href="https://www.instagram.com/epirocgroup">Instagram</a>
         </div>
-        <div class="devsocials">
+        <div class="linkers devsocials">
             <p class="title"><strong>Follow developer on socials</strong></p>
             <a href="https://linktr.ee/catosoriginal">Developer Bio</a>
             <a href="https://github.com/catosoriginal">Github</a>
@@ -259,7 +420,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
         <a href="/epiroc-safety/partners">Partners</a>
-        <a href="/epiroc-safety/contact-us">Contact Us</a>
+        <a href="/epiroc-safety/site-project">Site Project</a>
     </div>
 </div>
 <style>
@@ -307,8 +468,7 @@ document.addEventListener("DOMContentLoaded", () => {
         flex-wrap: nowrap;
         justify-content: center;
     }
-    #mainfooter .title .epirocsocials,
-    #mainfooter .title .devsocials {
+    #mainfooter .title .linkers {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -319,16 +479,14 @@ document.addEventListener("DOMContentLoaded", () => {
     #mainfooter .title .epirocsocials p,
     #mainfooter .title .devsocials p {
         color: rgb(67, 86, 99);
-    }
-    #mainfooter .title .epirocsocials a, 
-    #mainfooter .title .devsocials a {
+    } 
+    #mainfooter .title .linkers a {
         color: rgb(72, 101, 115);
         text-decoration: none;
         transition: all 0.3s ease;
         border-radius: 13px;
     }
-    #mainfooter .title .devsocials a:hover,
-    #mainfooter .title .epirocsocials a:hover {
+    #mainfooter .title .linkers a:hover {
         background-color: rgb(72, 101, 115);
         color: rgb(255, 199, 43);
     }

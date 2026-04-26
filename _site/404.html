@@ -13,6 +13,7 @@
         <link rel="icon" href="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png" type="image/x-icon">
 
         <!-- No javascript enabled in browser warning. (but site cant operate normal without javascript) -->
+        <!-- i created javascript only for owner verify page. -->
         <noscript>You need to enable javascript to use this website!</noscript>
 
         <!-- Fonts imports -->
@@ -65,7 +66,7 @@
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
         <a href="/epiroc-safety/partners">Partners</a>
-        <a class="fatie" href="/epiroc-safety/contact-us">Contact Us</a>
+        <a class="fatie" href="/epiroc-safety/site-project">Site Project</a>
     </div>
 </header>
 
@@ -130,8 +131,9 @@
 
 
 #mainheader-redirects a:hover {
-    background: var(--pagecolor1);
+    background-color: var(--pagecolor3);
     transform: translateY(-2px);
+    color: var(--pagecolor1);
 }
 
 
@@ -237,13 +239,13 @@
                 <!-- inserting footer to page -->
                 <div id="mainfooter">
     <div class="title">
-        <div class="epirocsocials">
+        <div class="linkers epirocsocials">
             <p class="title"><strong>Follow Epiroc on socials</strong></p>
             <a href="https://www.facebook.com/epirocgroup/">Facebook</a>
             <a href="https://www.linkedin.com/company/epiroc">LinkedIn</a>
             <a href="https://www.instagram.com/epirocgroup">Instagram</a>
         </div>
-        <div class="devsocials">
+        <div class="linkers devsocials">
             <p class="title"><strong>Follow developer on socials</strong></p>
             <a href="https://linktr.ee/catosoriginal">Developer Bio</a>
             <a href="https://github.com/catosoriginal">Github</a>
@@ -256,7 +258,7 @@
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
         <a href="/epiroc-safety/partners">Partners</a>
-        <a href="/epiroc-safety/contact-us">Contact Us</a>
+        <a href="/epiroc-safety/site-project">Site Project</a>
     </div>
 </div>
 <style>
@@ -304,8 +306,7 @@
         flex-wrap: nowrap;
         justify-content: center;
     }
-    #mainfooter .title .epirocsocials,
-    #mainfooter .title .devsocials {
+    #mainfooter .title .linkers {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -316,16 +317,14 @@
     #mainfooter .title .epirocsocials p,
     #mainfooter .title .devsocials p {
         color: rgb(67, 86, 99);
-    }
-    #mainfooter .title .epirocsocials a, 
-    #mainfooter .title .devsocials a {
+    } 
+    #mainfooter .title .linkers a {
         color: rgb(72, 101, 115);
         text-decoration: none;
         transition: all 0.3s ease;
         border-radius: 13px;
     }
-    #mainfooter .title .devsocials a:hover,
-    #mainfooter .title .epirocsocials a:hover {
+    #mainfooter .title .linkers a:hover {
         background-color: rgb(72, 101, 115);
         color: rgb(255, 199, 43);
     }

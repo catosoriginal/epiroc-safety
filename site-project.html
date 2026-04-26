@@ -1,2 +1,104 @@
 ---
 ---
+
+
+<div class="mainsafeties safetiesbox">
+    <p class="maincytate">Welcome to the site project page!</p>
+    <p class="prelist-text">Where do you want to go?</p>
+    <ul>
+        <li><a href="{{ '/site-project/presentation' | relative_url }}">View project presentation</a></li>
+        <li><a href="{{ '/site-project/verify-owner' | relative_url }}">Verify work owner</a></li>
+        <li><a href="https://github.com/catosoriginal/epiroc-safety">View github project repository</a></li>
+    </ul>
+</div>
+
+
+<style>
+    .safetiesbox {
+        margin-bottom: 7px;
+        max-width: 100%;
+        width: 100%;
+        background-color: var(--pagecolor1);
+        /* padding: top right bottom left; */
+        padding: 5px 0 5px 0 ;
+    }
+    .safetiesbox p {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .safetiesbox .maincytate {
+        font-size: clamp(37px, 45px, 68px);
+        color: var(--pagecolor2);
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .safetiesbox .sub5 {
+        font-size: clamp(20px, 30px, 45px);
+        color: var(--pagecolor3);
+    }
+    .safetiesbox .prelist-text {
+        font-size: clamp(21px, 25px, 33px);
+        color: var(--pagecolor2 );
+    }
+    .safetiesbox .afterlist-text {
+        font-size: clamp(21px, 25px, 33px);
+        color: var(--pagecolor2 );
+    }
+    .safetiesbox ul {
+        list-style-position: inside;
+    }
+    .safetiesbox ul li {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        color: var(--pagecolor1);
+    }
+    .safetiesbox ul li a {
+        font-size: clamp(19px, 29px, 40px);
+        color: var(--pagecolor2);
+    }
+
+    .safetiesbox .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .safetiesbox .images img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* */
+    /* */
+    /* */
+    /* */
+    /* */
+
+    .mainsafeties {
+        background-color: var(--pagecolor2);
+    }
+    .mainsafeties .maincytate {
+        color: var(--pagecolor1);
+    }
+    .mainsafeties .sub5 {
+        color: var(--pagecolor2);
+        background-color: var(--pagecolor1);
+    }
+    .mainsafeties .prelist-text {
+        color: var(--pagecolor1 );
+    }
+    .mainsafeties .afterlist-text {
+        color: var(--pagecolor1 );
+    }
+    .mainsafeties ul {
+        background-color: var(--pagecolor1);
+    }
+    .mainsafeties ul li {
+        color: var(--pagecolor2);
+    }
+
+</style>

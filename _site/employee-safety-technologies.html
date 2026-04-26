@@ -13,6 +13,7 @@
         <link rel="icon" href="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png" type="image/x-icon">
 
         <!-- No javascript enabled in browser warning. (but site cant operate normal without javascript) -->
+        <!-- i created javascript only for owner verify page. -->
         <noscript>You need to enable javascript to use this website!</noscript>
 
         <!-- Fonts imports -->
@@ -65,7 +66,7 @@
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
         <a href="/epiroc-safety/partners">Partners</a>
-        <a class="fatie" href="/epiroc-safety/contact-us">Contact Us</a>
+        <a class="fatie" href="/epiroc-safety/site-project">Site Project</a>
     </div>
 </header>
 
@@ -130,8 +131,9 @@
 
 
 #mainheader-redirects a:hover {
-    background: var(--pagecolor1);
+    background-color: var(--pagecolor3);
     transform: translateY(-2px);
+    color: var(--pagecolor1);
 }
 
 
@@ -215,7 +217,7 @@
         <li>operator warning systems for potential hazards</li>
         <li>overload and abnormal operation detection</li>
     </ul>
-    <div class="images">
+    <div class="images num2">
         <img alt="Epiroc control tower" src="/epiroc-safety/backend/assets/stockimages/epiroc-control-tower.jpg">
         <img alt="Epiroc smart rock car" src="/epiroc-safety/backend/assets/stockimages/smartrocd65drillrigdebutsinus.jpg">
     </div>
@@ -232,7 +234,7 @@
         <li>structural fragments</li>
         <li>tools or loose equipment components</li>
     </ul>
-    <div class="images">
+    <div class="images num1">
         <img alt="Epiroc fops protection system car" src="/epiroc-safety/backend/assets/stockimages/EX_Guarding_FOPS-5.jpg">
     </div>
     <p class="afterlist-text">The operator’s cabin is engineered to withstand high-impact forces, using reinforced structures and tested high-strength materials.</p>
@@ -251,7 +253,7 @@
         <li>regular equipment inspections</li>
         <li>strict control of elevated components</li>
     </ul>
-    <div class="images">
+    <div class="images num1">
         <img alt="Epiroc drops protection system car" src="/epiroc-safety/backend/assets/stockimages/Dropped-Objects-Prevention-Scheme-DROPS.png">
     </div>
     <p class="afterlist-text">DROPS is especially important in underground and multi-level working environments such as mines.</p>
@@ -267,7 +269,7 @@
         <li>safety interlock mechanisms</li>
         <li>automatic machine shutdown systems</li>
     </ul>
-    <div class="images">
+    <div class="images num2">
         <img alt="Emergency Stop Buttons" src="/epiroc-safety/backend/assets/stockimages/emergency-stop-safety-cover-lockout-device-1024x576.jpg">
         <img alt="Emergency Stop Buttons" src="/epiroc-safety/backend/assets/stockimages/istockphoto-899069678-170667a.jpg">
     </div>
@@ -284,7 +286,7 @@
         <li>use of personal protective equipment (PPE)</li>
         <li>strict adherence to safety procedures</li>
     </ul>
-    <div class="images">
+    <div class="images num2">
         <img alt="Staff Trainings" src="/epiroc-safety/backend/assets/stockimages/trainings.png">
         <img alt="Staff Trainings" src="/epiroc-safety/backend/assets/stockimages/portrait-woman-worker-and-engineer-under-inspectio-2021-10-27-15-50-42-utc-1980x1320.jpg">
     </div>
@@ -354,10 +356,18 @@
 
     .safetiesbox .images {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    } /* grid-template-columns: repeat(3, 1fr); */
+    .safetiesbox .images.num1 {
+        grid-template-columns: repeat(1, 1250px);
     }
-
+    .safetiesbox .images.num2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .safetiesbox .images.num3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     .safetiesbox .images img {
         width: 100%;
         aspect-ratio: 16 / 9;
@@ -372,60 +382,26 @@
     /* */
 
     .mainsafeties {
-        margin-bottom: 7px;
-        max-width: 100%;
-        width: 100%;
         background-color: var(--pagecolor2);
-        /* padding: top right bottom left; */
-        padding: 5px 0 5px 0 ;
-    }
-    .mainsafeties p {
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
     }
     .mainsafeties .maincytate {
-        font-size: clamp(37px, 45px, 68px);
         color: var(--pagecolor1);
-        font-weight: 700;
-        line-height: 1.2;
     }
     .mainsafeties .sub5 {
-        font-size: clamp(20px, 30px, 45px);
         color: var(--pagecolor2);
         background-color: var(--pagecolor1);
     }
     .mainsafeties .prelist-text {
-        font-size: clamp(21px, 25px, 33px);
         color: var(--pagecolor1 );
     }
     .mainsafeties .afterlist-text {
-        font-size: clamp(21px, 25px, 33px);
         color: var(--pagecolor1 );
     }
     .mainsafeties ul {
-        list-style-position: inside;
         background-color: var(--pagecolor1);
     }
     .mainsafeties ul li {
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
-        font-size: clamp(19px, 29px, 40px);
         color: var(--pagecolor2);
-    }
-
-    .mainsafeties .images {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-
-    .mainsafeties .images img {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-        display: block;
     }
 
 </style>
@@ -435,13 +411,13 @@
                 <!-- inserting footer to page -->
                 <div id="mainfooter">
     <div class="title">
-        <div class="epirocsocials">
+        <div class="linkers epirocsocials">
             <p class="title"><strong>Follow Epiroc on socials</strong></p>
             <a href="https://www.facebook.com/epirocgroup/">Facebook</a>
             <a href="https://www.linkedin.com/company/epiroc">LinkedIn</a>
             <a href="https://www.instagram.com/epirocgroup">Instagram</a>
         </div>
-        <div class="devsocials">
+        <div class="linkers devsocials">
             <p class="title"><strong>Follow developer on socials</strong></p>
             <a href="https://linktr.ee/catosoriginal">Developer Bio</a>
             <a href="https://github.com/catosoriginal">Github</a>
@@ -454,7 +430,7 @@
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
         <a href="/epiroc-safety/partners">Partners</a>
-        <a href="/epiroc-safety/contact-us">Contact Us</a>
+        <a href="/epiroc-safety/site-project">Site Project</a>
     </div>
 </div>
 <style>
@@ -502,8 +478,7 @@
         flex-wrap: nowrap;
         justify-content: center;
     }
-    #mainfooter .title .epirocsocials,
-    #mainfooter .title .devsocials {
+    #mainfooter .title .linkers {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -514,16 +489,14 @@
     #mainfooter .title .epirocsocials p,
     #mainfooter .title .devsocials p {
         color: rgb(67, 86, 99);
-    }
-    #mainfooter .title .epirocsocials a, 
-    #mainfooter .title .devsocials a {
+    } 
+    #mainfooter .title .linkers a {
         color: rgb(72, 101, 115);
         text-decoration: none;
         transition: all 0.3s ease;
         border-radius: 13px;
     }
-    #mainfooter .title .devsocials a:hover,
-    #mainfooter .title .epirocsocials a:hover {
+    #mainfooter .title .linkers a:hover {
         background-color: rgb(72, 101, 115);
         color: rgb(255, 199, 43);
     }
