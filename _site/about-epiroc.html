@@ -8,7 +8,7 @@
         <!-- changing site charset -->
         <meta charset="UTF-8">
         <!-- changing site title -->
-        <title>Epiroc Safety</title>
+        <title>About Epiroc</title>
         <!-- chaning site icon -->
         <link rel="icon" href="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png" type="image/x-icon">
 
@@ -64,7 +64,6 @@
         <a href="/epiroc-safety/about-epiroc">About Epiroc</a>
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
-        <a href="/epiroc-safety/technologies">Epiroc Technologies</a>
         <a href="/epiroc-safety/partners">Partners</a>
         <a class="fatie" href="/epiroc-safety/contact-us">Contact Us</a>
     </div>
@@ -83,6 +82,7 @@
     border-bottom: 2px solid var(--pagecolor2);
     flex-wrap: wrap;
     font-family: 'Manrope', sans-serif;
+    margin-bottom: 7px;
 }
 
 
@@ -199,9 +199,9 @@
                 
                 <div class="html">
                     <!-- inserting page content to page -->
-                    <div id="all-content">
-    <div id="about-company">
-        <p>Epiroc is a global leader in mining and infrastructure equipment, delivering advanced solutions for drilling, excavation, and underground operations worldwide. The company operates in highly demanding environments where reliability, precision, and efficiency are critical. At its core, Epiroc is more than an equipment manufacturer — it is a safety-first engineering organization. Every machine and system is designed with a strong focus on protecting operators, preventing accidents, and reducing risks in complex industrial conditions.</p>
+                    <div id="about-company">
+        <p class="aboutepiroc">About Epiroc</p>
+        <p class="abouttext">Epiroc is a global leader in mining and infrastructure equipment, delivering advanced solutions for drilling, excavation, and underground operations worldwide. The company operates in highly demanding environments where reliability, precision, and efficiency are critical. At its core, Epiroc is more than an equipment manufacturer — it is a safety-first engineering organization. Every machine and system is designed with a strong focus on protecting operators, preventing accidents, and reducing risks in complex industrial conditions.</p>
         <div class="images">
             <img alt="Epiroc quarters opening" src="/epiroc-safety/backend/assets/stockimages/epiroc-quarters-opening.jpg">
             <img alt="Epiroc office" src="/epiroc-safety/backend/assets/stockimages/epiroc-office.jpg">
@@ -213,15 +213,8 @@
         <p class="headline-cytate">A new generation's perspective on safety standards in extreme environments with Epiroc.</p>
         <p class="main-text">For a long time in industry, it was believed that basic protective equipment — helmets, protective clothing, and tools — was sufficient to ensure workers’ safety. However, modern working conditions in the mining and construction industries require a significantly more comprehensive approach. The company Epiroc has changed this perception, taking safety to a fundamentally new level.</p>
     </div>
-</div>
 <style>
-    #all-content {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
     #about-safety {
-        font-family: "Franklin Gothic Medium", "Franklin Gothic", Arial, sans-serif;
         background-color: var(--pagecolor1);
         border: 3px solid var(--pagecolor1);
         width: 100%;
@@ -242,7 +235,7 @@
         font-size: clamp(24px, 4vw, 56px);
         font-weight: 700;
         line-height: 1.2;
-        color: var;
+        color: var(--pagecolor2);
     }
     #about-safety .headline-cytate {
         font-size: clamp(20px, 3vw, 44px);
@@ -251,12 +244,11 @@
         color: var(--pagecolor3);
     }
     #about-safety .main-text {
-        font-size: clamp(16px, 1.5vw, 20px);
+        font-size: clamp(20px, 25px, 44px);
         color: beige;
     }
 
     #about-company {
-        font-family: "Franklin Gothic Medium", "Franklin Gothic", Arial, sans-serif;
         background-color: var(--pagecolor1);
         border: 3px solid var(--pagecolor3);
         width: 100%;
@@ -267,12 +259,18 @@
         box-sizing: border-box;
     }
 
-    #about-company p {
+    #about-company .abouttext {
         margin: 0;
-        font-size: clamp(17px, 27px, 43px);
+        font-size: clamp(20px, 25px, 44px);
+        color: var(--pagecolor3);
+        text-align: center;
+    }
+    #about-company .aboutepiroc {
+        margin: 0;
+        font-size: clamp(47px, 59px, 65px);
         font-weight: 700;
         line-height: 1.2;
-        color: var(--pagecolor3);
+        color: var(--pagecolor2);
         text-align: center;
     }
 
@@ -313,7 +311,6 @@
         <a href="/epiroc-safety/about-epiroc">About Epiroc</a>
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
-        <a href="/epiroc-safety/technologies">Epiroc Technologies</a>
         <a href="/epiroc-safety/partners">Partners</a>
         <a href="/epiroc-safety/contact-us">Contact Us</a>
     </div>
@@ -325,6 +322,7 @@
         height: fit-content;
         background-color: rgb(255, 255, 255);
         border: 3px solid rgb(253, 255, 132);
+        margin-top: 7px;
     }
     #mainfooter .youalsomaylike {
         background-color: rgb(72, 101, 115);

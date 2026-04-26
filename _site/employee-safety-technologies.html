@@ -8,7 +8,7 @@
         <!-- changing site charset -->
         <meta charset="UTF-8">
         <!-- changing site title -->
-        <title>Epiroc Safety</title>
+        <title>Safety</title>
         <!-- chaning site icon -->
         <link rel="icon" href="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png" type="image/x-icon">
 
@@ -64,7 +64,6 @@
         <a href="/epiroc-safety/about-epiroc">About Epiroc</a>
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
-        <a href="/epiroc-safety/technologies">Epiroc Technologies</a>
         <a href="/epiroc-safety/partners">Partners</a>
         <a class="fatie" href="/epiroc-safety/contact-us">Contact Us</a>
     </div>
@@ -83,6 +82,7 @@
     border-bottom: 2px solid var(--pagecolor2);
     flex-wrap: wrap;
     font-family: 'Manrope', sans-serif;
+    margin-bottom: 7px;
 }
 
 
@@ -199,13 +199,9 @@
                 
                 <div class="html">
                     <!-- inserting page content to page -->
-                    <div class="mainsafeties safetiesbox">
+                    <div class="mainsafeties safetiesbox glob">
     <p class="maincytate">Employee Safety Technologies</p>
     <p class="sub5">Employee safety is the top priority. Without it, operations cannot continue. It includes technical solutions, organizational measures, and strict rules for the operation of equipment. Employee safety is a key priority in modern industrial operations. In mining and construction environments, where risks are significantly higher, advanced safety technologies are an essential part of daily work. Epiroc applies a comprehensive safety approach that combines engineering design, automation, and preventive protection systems to minimize risks and protect personnel in extreme working conditions.</p>
-    <div class="images">
-        <img alt="Epiroc control tower" src="/epiroc-safety/backend/assets/stockimages/epiroc-control-tower.jpg">
-        <img alt="Epiroc smart rock car" src="/epiroc-safety/backend/assets/stockimages/smartrocd65drillrigdebutsinus.jpg">
-    </div>
 </div>
 
 
@@ -219,6 +215,10 @@
         <li>operator warning systems for potential hazards</li>
         <li>overload and abnormal operation detection</li>
     </ul>
+    <div class="images">
+        <img alt="Epiroc control tower" src="/epiroc-safety/backend/assets/stockimages/epiroc-control-tower.jpg">
+        <img alt="Epiroc smart rock car" src="/epiroc-safety/backend/assets/stockimages/smartrocd65drillrigdebutsinus.jpg">
+    </div>
     <p class="afterlist-text">Such technologies help identify risks at an early stage, before they develop into critical failures or accidents.</p>
 </div>
 
@@ -232,6 +232,9 @@
         <li>structural fragments</li>
         <li>tools or loose equipment components</li>
     </ul>
+    <div class="images">
+        <img alt="Epiroc fops protection system car" src="/epiroc-safety/backend/assets/stockimages/EX_Guarding_FOPS-5.jpg">
+    </div>
     <p class="afterlist-text">The operator’s cabin is engineered to withstand high-impact forces, using reinforced structures and tested high-strength materials.</p>
     <p class="afterlist-text">FOPS is a passive safety system that ensures the operator’s survival space remains protected even under extreme conditions.</p>
 </div>  
@@ -248,6 +251,9 @@
         <li>regular equipment inspections</li>
         <li>strict control of elevated components</li>
     </ul>
+    <div class="images">
+        <img alt="Epiroc drops protection system car" src="/epiroc-safety/backend/assets/stockimages/Dropped-Objects-Prevention-Scheme-DROPS.png">
+    </div>
     <p class="afterlist-text">DROPS is especially important in underground and multi-level working environments such as mines.</p>
 </div>  
 
@@ -261,6 +267,10 @@
         <li>safety interlock mechanisms</li>
         <li>automatic machine shutdown systems</li>
     </ul>
+    <div class="images">
+        <img alt="Emergency Stop Buttons" src="/epiroc-safety/backend/assets/stockimages/emergency-stop-safety-cover-lockout-device-1024x576.jpg">
+        <img alt="Emergency Stop Buttons" src="/epiroc-safety/backend/assets/stockimages/istockphoto-899069678-170667a.jpg">
+    </div>
     <p class="afterlist-text">These systems ensure rapid response and help prevent escalation of dangerous events.</p>
 </div>  
 
@@ -274,6 +284,10 @@
         <li>use of personal protective equipment (PPE)</li>
         <li>strict adherence to safety procedures</li>
     </ul>
+    <div class="images">
+        <img alt="Staff Trainings" src="/epiroc-safety/backend/assets/stockimages/trainings.png">
+        <img alt="Staff Trainings" src="/epiroc-safety/backend/assets/stockimages/portrait-woman-worker-and-engineer-under-inspectio-2021-10-27-15-50-42-utc-1980x1320.jpg">
+    </div>
     <p class="afterlist-text">Every employee is trained to understand risks and respond correctly in potentially hazardous situations.</p>
 </div>  
 
@@ -283,7 +297,7 @@
     <p class="sub5">Modern safety engineering focuses not only on controlling risks, but on preventing them through design, automation, and intelligent systems.</p>
 </div>  
 
-<div class="conclusion safetiesbox">
+<div class="mainsafeties safetiesbox">
     <p class="maincytate">Conclusion</p>
     <p class="prelist-text">Employee Safety Technologies at Epiroc represent a fully integrated safety ecosystem that includes:</p>
     <ul>
@@ -312,6 +326,8 @@
     .safetiesbox .maincytate {
         font-size: clamp(37px, 45px, 68px);
         color: var(--pagecolor2);
+        font-weight: 700;
+        line-height: 1.2;
     }
     .safetiesbox .sub5 {
         font-size: clamp(20px, 30px, 45px);
@@ -349,6 +365,69 @@
         display: block;
     }
 
+    /* */
+    /* */
+    /* */
+    /* */
+    /* */
+
+    .mainsafeties {
+        margin-bottom: 7px;
+        max-width: 100%;
+        width: 100%;
+        background-color: var(--pagecolor2);
+        /* padding: top right bottom left; */
+        padding: 5px 0 5px 0 ;
+    }
+    .mainsafeties p {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .mainsafeties .maincytate {
+        font-size: clamp(37px, 45px, 68px);
+        color: var(--pagecolor1);
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .mainsafeties .sub5 {
+        font-size: clamp(20px, 30px, 45px);
+        color: var(--pagecolor2);
+        background-color: var(--pagecolor1);
+    }
+    .mainsafeties .prelist-text {
+        font-size: clamp(21px, 25px, 33px);
+        color: var(--pagecolor1 );
+    }
+    .mainsafeties .afterlist-text {
+        font-size: clamp(21px, 25px, 33px);
+        color: var(--pagecolor1 );
+    }
+    .mainsafeties ul {
+        list-style-position: inside;
+        background-color: var(--pagecolor1);
+    }
+    .mainsafeties ul li {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: clamp(19px, 29px, 40px);
+        color: var(--pagecolor2);
+    }
+
+    .mainsafeties .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .mainsafeties .images img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+    }
+
 </style>
                 </div>
                 
@@ -374,7 +453,6 @@
         <a href="/epiroc-safety/about-epiroc">About Epiroc</a>
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
-        <a href="/epiroc-safety/technologies">Epiroc Technologies</a>
         <a href="/epiroc-safety/partners">Partners</a>
         <a href="/epiroc-safety/contact-us">Contact Us</a>
     </div>
@@ -386,6 +464,7 @@
         height: fit-content;
         background-color: rgb(255, 255, 255);
         border: 3px solid rgb(253, 255, 132);
+        margin-top: 7px;
     }
     #mainfooter .youalsomaylike {
         background-color: rgb(72, 101, 115);
