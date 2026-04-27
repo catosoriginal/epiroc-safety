@@ -66,145 +66,105 @@
         <div id="page-wrapper">
             <!-- inserting header to page -->
             <header id="mainheader">
-    <div id="mainheader-somestuff">
-        <img class="homeheader-image" decoding="async" src="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png" alt="Best Company Logo" />
-        <p class="home"><strong>Fast, effective, safe.</strong></p>
-    </div>
-    <nav id="mainheader-redirects">
+    <div class="upvisuals">
+        <img class="logo" alt="Epiroc Logo" src="/epiroc-safety/backend/assets/icons/epiroc-logo-yellow-icon-nobg.png">
+        <p class="cname">Epiroc</p>
+        <p class="ccytate">Fast, effective, safe.</p>
+    </div>  
+    <div class="redirects">
         <a href="/epiroc-safety/about-epiroc">About Epiroc</a>
         <a href="/epiroc-safety/employee-safety-technologies">Employee Safety Technologies</a>
         <a href="/epiroc-safety/comparison-with-competitors-safety">Comparison with competitors safety</a>
         <a href="/epiroc-safety/partners">Partners</a>
         <a class="fatie" href="/epiroc-safety/site-project">Site Project</a>
     </div>
+    <div class="downvisuals">
+        <p class="pl">> Comparison with competitors safety</p>
+    </div>
 </header>
-
 <style>
-    
-
-#mainheader {
-    background: var(--pagecolor1);
-    color: #e6e6e6;
-    padding: 24px 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid var(--pagecolor2);
-    flex-wrap: wrap;
-    font-family: 'Manrope', sans-serif;
-    margin-bottom: 7px;
-}
-
-
-#mainheader-somestuff {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.homeheader-image {
-    width: 42px;
-    height: 42px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 6px var(--pagecolor3));
-}
-
-#mainheader-somestuff .home {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--pagecolor3);
-}
-
-
-#mainheader-redirects {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
-}
-
-#mainheader-redirects a {
-    color: var(--pagecolor3);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 6px 10px;
-    border-radius: 6px;
-    transition: all 0.25s ease;
-    position: relative;
-}
-
-#mainheader-redirects .fatie {
-    background-color: var(--pagecolor2);
-    color: rgb(72, 101, 115);
-}
-
-
-#mainheader-redirects a:hover {
-    background-color: var(--pagecolor3);
-    transform: translateY(-2px);
-    color: var(--pagecolor1);
-}
-
-
-#mainheader-redirects a::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 2px;
-    height: 2px;
-    background: var(--pagecolor3);
-    transform: scaleX(0);
-    transition: transform 0.25s ease;
-}
-
-#mainheader-redirects a:hover::after {
-    transform: scaleX(1);
-}
-
-
-@media (max-width: 768px) {
     #mainheader {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #mainheader-redirects {
+        max-width: 100%;
         width: 100%;
-        justify-content: flex-start;
-        gap: 12px;
+        background-color: var(--pagecolor1);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
     }
-}
-
-
-@media (max-width: 480px) {
-    #mainheader {
-        text-align: center;
+    #mainheader .upvisuals {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         align-items: center;
     }
-
-    #mainheader-somestuff {
-        flex-direction: column;
+    #mainheader .upvisuals .cname {
+        font-size: clamp(37px, 45px, 68px);
+        color: var(--pagecolor2);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+        margin-right: 3px;
+    }
+    #mainheader .upvisuals .ccytate {
+        font-size: clamp(25px, 35px, 5px);
+        color: var(--pagecolor3);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+    }
+    #mainheader .upvisuals .logo {
+        width: 55px;
+        height: 55px;
+        object-fit: contain;
+        margin: 0;
+    }
+    #mainheader .redirects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        align-items: center;
+        background-color: var(--pagecolor2);
+        padding: 5px 5px;
+        margin-bottom: 3px;
+    }
+    #mainheader .redirects a {
+        all: unset;
+        background-color: var(--pagecolor1);
+        color: var(--pagecolor2);
+        border-radius: 5px;
+        padding: 3px 3px;
+        margin-right: 7px;
+        margin-top: 3px;
+    }
+    #mainheader .redirects a:hover {
+        background-color: var(--pagecolor3);
+        color: var(--pagecolor1);
+    }
+    #mainheader .downvisuals {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        align-items: center;
+        background-color: var(--pagecolor2);
+        padding: 1px 1px;
+        margin-bottom: 3px;
+        overflow-x: auto;
+        
+    }
+    #mainheader .downvisuals .pl {
+        max-width: 100%;
+        width: 100%;
         text-align: center;
+        font-size: clamp(10px, 15px, 35px);
+        color: var(--pagecolor1);
+        font-weight: 700;
+        line-height: 1.2;
     }
 
-    .homeheader-image {
-        width: 50px;
-        height: 50px;
-    }
-
-    #mainheader-redirects {
-        justify-content: center;
-    }
-
-    #mainheader-redirects a {
-        font-size: 13px;
-        padding: 8px 12px;
-    }
-}
 </style>
-
-
             <div class="content">
             
                 

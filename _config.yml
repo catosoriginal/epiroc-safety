@@ -30,34 +30,45 @@ defaults:
     values:
       title: "About Epiroc"
       permalink: /about-epiroc
+      displaypermalink: "About Epiroc"
   - scope:
       path: "comparison-with-competitors-safety.html"
     values:
       title: "Comparison with competitors safety"
       permalink: /comparison-with-competitors-safety
+      displaypermalink: "Comparison with competitors safety"
+  - scope:
+      path: "partners.html"
+    values:
+      title: "Partners"
+      permalink: /partners
+      displaypermalink: "Partners"
   - scope:
       path: "employee-safety-technologies.html"
     values:
       title: "Safety"
       permalink: /employee-safety-technologies
+      displaypermalink: "Employee Safety Technologies"
   - scope:
       path: "site-project.html"
     values:
       title: "Site Project"
       permalink: /site-project
+      displaypermalink: "Site Project"
   - scope:
       path: "site-project/verify-owner.html"
     values:
       title: "Project: Verify Owner"
       permalink: /site-project/verify-owner
+      displaypermalink: "Site Project / Verify Owner"
+  - scope:
+      path: "site-project/presentation"
+    values:
+      title: "Project: Project Presentation"
+      permalink: /site-project/presentation
+      displaypermalink: "Site Project / Project Presentation"
   - scope:
       path: "index.html"
     values:
       title: "Wait"
-  - scope:
-      path: "verify-work.html"
-    values:
-      title: "Verify Work"
-      icon: backend/assets/icons/verified.ico
-      permalink: /verify-work
       

@@ -1,0 +1,98 @@
+<header id="mainheader">
+    <div id="mainheader-somestuff">
+        <img class="homeheader-image" decoding="async" src="{{ 'backend/assets/icons/epiroc-logo-yellow-icon-nobg.png' | relative_url }}" alt="Best Company Logo" />
+        <p class="home"><strong>Fast, effective, safe.</strong></p>
+    </div>
+    <nav id="mainheader-redirects">
+        <a href="{{ '/about-epiroc' | relative_url }}">About Epiroc</a>
+        <a href="{{ '/employee-safety-technologies' | relative_url }}">Employee Safety Technologies</a>
+        <a href="{{ '/comparison-with-competitors-safety' | relative_url }}">Comparison with competitors safety</a>
+        <a href="{{ '/partners' | relative_url }}">Partners</a>
+        <a class="fatie" href="{{ '/site-project' | relative_url }}">Site Project</a>
+    </div>
+</header>
+
+<style>
+    
+
+#mainheader {
+    background: var(--pagecolor1);
+    color: #e6e6e6;
+    padding: 24px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--pagecolor2);
+    flex-wrap: wrap;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 7px;
+}
+
+
+#mainheader-somestuff {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.homeheader-image {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px var(--pagecolor2));
+}
+
+#mainheader-somestuff .home {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--pagecolor3);
+}
+
+
+#mainheader-redirects {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+#mainheader-redirects a {
+    color: var(--pagecolor3);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+#mainheader-redirects .fatie {
+    background-color: var(--pagecolor2);
+    color: rgb(72, 101, 115);
+}
+
+
+#mainheader-redirects a:hover {
+    background-color: var(--pagecolor3);
+    transform: translateY(-2px);
+    color: var(--pagecolor1);
+}
+
+
+#mainheader-redirects a::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 2px;
+    height: 2px;
+    background: var(--pagecolor3);
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+#mainheader-redirects a:hover::after {
+    transform: scaleX(1);
+}
+</style>
+
