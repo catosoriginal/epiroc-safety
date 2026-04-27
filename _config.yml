@@ -62,7 +62,7 @@ defaults:
       permalink: /site-project/verify-owner
       displaypermalink: "Site Project / Verify Owner"
   - scope:
-      path: "site-project/presentation"
+      path: "site-project/presentation.html"
     values:
       title: "Project: Project Presentation"
       permalink: /site-project/presentation
